@@ -752,7 +752,7 @@ header, footer {
      .footer {
           padding: 1% 5%;
           display: grid;
-          grid-template-columns: repeat(1, 1fr);
+          grid-template-columns: 1fr;
           gap: 20px;
           text-align: center;
      }
@@ -792,6 +792,7 @@ header, footer {
 }
 @media (max-width: 650px) {
      .portfolio__inner {
+          display: grid;
           grid-template-columns: 1fr;
      }
      .portfolio-item {
