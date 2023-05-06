@@ -805,99 +805,218 @@ header, footer {
      }
 }
 
+/***************страница hall*************/
+.section-subtitle {
+     text-align: center;
+     font-size: 32px;
+     font-weight: 500;
+     margin: 1.5em 1em;
+}
 
-/**************************страница hall**************************/
 /* спойлер */
 .rent-item {
      padding: 15px 0;
      border-bottom: 1px solid var(--yellow);
      cursor: pointer;
 }
+
 .rent-item-title {
      display: flex;
      align-items: center;
      font-size: 22px;
      font-weight: 500;
 }
+
 details summary::webkit-details-marker {
-     display: none;
+  display: none;
 }
-.rent-item-title::before{
+
+.rent-item-title::before {
      content: '+';
-     font-size: 40px;
+     font-size: 48px;
      color: var(--yellow);
      margin-right: 10px;
 }
-details[open] .rent-item-title::before{
+
+details[open] .rent-item-title::before {
      content: '-';
-}
-@keyframes SNICKERS {
-     0% {
-          opacity: 0;
-     }
-     100% {
-          opacity: 1;
-     }
 }
 
 .rent-list {
      line-height: 2;
      list-style: disc;
      padding-left: 20px;
-     animation: SNICKERS 0.1s;
 }
-.rent-list-item {
-}
+
 .hall__description {
      display: flex;
-     width: 50%;
-     height: 27em;
-     overflow: hidden;
+     justify-content: space-between;
+     align-items: center;
 }
-.hall__slider {
+
+/* неуправляемый слайдер */
+
+.hall-slider {
      position: relative;
      width: 50%;
      height: 27em;
      overflow: hidden;
 }
+
 .hall-slider-slide {
      position: absolute;
      width: 100%;
      height: 100%;
      left: -100%;
-     animation: slide calc(--var(time) + var(--qty)) linear infinite;
+     animation: slide calc(var(--time) * var(--qty)) linear infinite;
      z-index: 0;
 }
+
 .hall-slider-slide:nth-child(2) {
      animation-delay: var(--time);
 }
+
 .hall-slider-slide:nth-child(3) {
-     animation-delay: calc(var(--time)*2);
+     animation-delay: calc(var(--time) * 2) ;
 }
+
 @keyframes slide {
      0% {
           z-index: 10;
-     }     
+     }
+
      7% {
           left: 0;
      }
+
      66% {
           left: 0;
      }
+
      100% {
           left: -100%;
      }
+
 }
+
 .hall-text {
      width: 45%;
      line-height: 1.5;
 }
+
 .bron {
      margin: 20px 0;
 }
+
 .hall-text-list {
      list-style: disc;
      padding-left: 15px;
+}
+
+/* таблица */
+.hall-table {
+     max-width: 100%;
+     border-collapse: collapse;
+}
+
+.head-table  {
+  font-weight: 500;
+
+}
+
+.hall-table td{
+     padding: 15px;
+     border-bottom: 1px solid var(--yellow);
+}
+
+.hall-table tr {
+     transition: all 0.5s;
+}
+
+.hall-table tr:hover {
+     background-color: #e4e4e4;
+}
+
+/* hall adaptive */
+@media (max-width: 1200px) {
+    
+     .hall__description {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          padding: 3% 10%;
+        }
+        .hall-text {
+          width: 100%;
+          line-height: 1.5;
+        }
+
+        .hall-slider {
+          width: 100%;
+        }
+
+        .milan-slide {
+          order: 1;
+        }
+
+        .milan-text {
+          order: 2;
+       }
+}
+
+@media (max-width: 768px) {
+     .hall-table {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+     }
+
+     .hall-table thead, 
+     .hall-table tbody,
+     .hall-table tr {
+          display: contents;
+     }
+
+     .hall-table td {
+          display: block;
+          text-align: center;
+          padding: 10px;
+     }
+
+     .hall-table td:hover {
+          background-color: #e4e4e4;
+     }
+
+     .hall-table td:nth-of-type(1) {
+          order: 1;
+     }
+
+     .hall-table td:nth-of-type(2) {
+          order: 2;
+     }
+
+     .hall-table td:nth-of-type(3) {
+          order: 3;
+     }
+
+     .hall-table td:nth-of-type(4) {
+          order: 4;
+     }
+
+     .section-subtitle {
+              margin: 0.5em 0em;
+        } 
+        .hall-slider {
+          height: 17em;
+        
+        }
+}
+
+
+@media (max-width: 480px) {
+     .hall-slider {
+          height: 10em;
+      }
 }
 
 /**************** contacts *****************/
