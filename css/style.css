@@ -306,6 +306,7 @@ header, footer {
 .about-text {
      line-height: 1.7;
 }
+}
 
 @media (min-width: 371px) and (max-width: 445px) {
      .about {
@@ -314,6 +315,7 @@ header, footer {
  }  
 .about-text {
      line-height: 1.7;
+}
 }
 
 @media (min-width: 320px) and (max-width: 370px) {
