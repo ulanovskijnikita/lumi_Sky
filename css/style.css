@@ -162,7 +162,7 @@ header, footer {
 }
 
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 479px) {
      .header {
        font-size: 17px;
 }
