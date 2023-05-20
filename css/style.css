@@ -287,7 +287,7 @@ header, footer {
  }
 }
 
-@media (min-width: 331px) and (max-width: 670px) {
+@media (min-width: 561px) and (max-width: 670px) {
      .about {
           height: 60vh;
           background-image: none;
@@ -298,7 +298,7 @@ header, footer {
 
 }
 
-@media (min-width: 320px) and (max-width: 330px) {
+@media (min-width: 320px) and (max-width: 560px) {
      .about {
           height: 90vh;
           background-image: none;
