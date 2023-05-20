@@ -58,9 +58,9 @@
      --time: 7s;
      --qty: 3;
 }
-12
 
-body {
+
+тело {
      font-family: 'Ubuntu', sans-serif;
      background-color: var(--bg-light);
      font-size: 18px;
