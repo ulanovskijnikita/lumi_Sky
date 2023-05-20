@@ -160,12 +160,21 @@ header, footer {
 
 }
 
+
+@media (max-width: 362px) {
+     .header {
+       font-size: 17px;
+}
+
+
+
 /* menu */
 .nav {
      background-color: var(--dark-gray);
      position: sticky;
      top: 0;
      z-index: 10;
+     padding: 10px 0;
 }
 
 .menu {
@@ -279,11 +288,16 @@ header, footer {
 
 @media (min-width: 320px) and (max-width: 670px) {
      .about {
-          height: 65vh;
+          height: 85vh;
           background-image: none;
  }  
 .about-text {
      line-height: 1.7;
+}
+
+.about-text:nth-child(3) {
+     line-height: 1.7;
+     margin-bottom: 30px;
 }
 
 }
