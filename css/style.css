@@ -246,7 +246,7 @@ header, footer {
 /*about adapt*/
 @media (max-width: 1220px) {
      .about {
-       height: 65vh;
+       height: 75vh;
        padding: 1% 5%;
     } 
     
@@ -263,7 +263,7 @@ header, footer {
 @media (max-width: 768px) {
      .about {
      background-image: url(../img/index/about-adapt.jpg);
-       height: 50vh;
+       height: 60vh;
        padding: 1% 5%;
     } 
     
@@ -627,7 +627,7 @@ header, footer {
      background-image: url(../img/index/request.jpg);
      background-repeat: no-repeat;
      background-size: cover;
-     height: 50vh;
+     height: 65vh;
      background-position: center;
      padding: 3% 5%;
      background-attachment: fixed;
