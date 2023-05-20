@@ -288,18 +288,24 @@ header, footer {
  }
 }
 
-@media (min-width: 320px) and (max-width: 670px) {
+@media (min-width: 562px) and (max-width: 670px) {
      .about {
-          height: 85vh;
+          height: 60vh;
           background-image: none;
  }  
 .about-text {
      line-height: 1.7;
 }
 
-.about-text:nth-child(3) {
+}
+
+@media (min-width: 320px) and (max-width: 561px) {
+     .about {
+          height: 90vh;
+          background-image: none;
+ }  
+.about-text {
      line-height: 1.7;
-     margin-bottom: 30px;
 }
 
 }
